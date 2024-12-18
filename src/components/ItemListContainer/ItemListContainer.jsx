@@ -1,15 +1,46 @@
+import { useState, useEffect } from "react"
+import { getProducts } from "../../data/data.js"
+import ItemList from "./ItemList.jsx"
+import { useParams } from "react-router-dom"
+import { SyncLoader } from "react-spinners"
+import "./itemlistcontainer.css"
+
 const ItemListContainer = ({ greeting }) => {
+    const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(false)
+  
+    const { idCategory } = useParams()
+  
+    useEffect(() => {
+      setLoading(true)
+  
+      getProducts()
+        .then((data) => {
+  
+          if (idCategory) {
+            const productsFilter = data.filter((product) => product.category === idCategory)
+            setProducts(productsFilter)
+          } else {
+            setProducts(data)
+          }
+        })
+        .catch((error) => {
+          console.error(error)
+        })
+        .finally(() => {
+          setLoading(false)
+        })
+    }, [idCategory])
+
+
     return (
         <main>
-            <h1>{ greeting}</h1>
-            <h2>Tu tienda de bebidas premium online.</h2>
-             <div className='mainText'>
-                <p>Explora nuestro amplio catálogo de bebidas alcohólicas y no alcohólicas, cuidadosamente seleccionadas para cada ocasión. Desde refrescantes jugos y sodas hasta los licores más exquisitos, en Elixir encontrarás todo lo que necesitas para disfrutar con amigos, familia o simplemente darte un gusto especial.</p>
-                
-                <p> Elige tus productos favoritos y crea la combinación perfecta. Nuestro sistema de compra en línea es fácil de usar, permitiéndote calcular el precio total de tu pedido en solo unos clics. En Elixir, cada compra es una experiencia única.</p>
-                
-                <p> Disfruta de nuestras bebidas con moderación y asegura momentos inolvidables sin excesos. Y recuerda, si eres menor de edad, no consumas bebidas alcohólicas.</p>
-            </div>
+            <div className="itemlistcontainer">
+      <h1>{greeting}</h1>
+      {
+        loading === true ? (<div style={{ height: "80vh", display: "flex", justifyContent: "center", alignItems: "center" }}> <SyncLoader color="lime" /> </div>) : (<ItemList products={products} />)
+      }
+    </div>
         </main>
     )
 }
