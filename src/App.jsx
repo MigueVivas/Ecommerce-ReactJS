@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Footer from './components/Footer/Footer'
 import './App.css'
@@ -7,7 +8,7 @@ import './App.css'
 function App() {
   
   return (
-  <body className='container'>
+  <div className='container'>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -21,7 +22,7 @@ function App() {
       <Footer />
 
     </BrowserRouter>
-  </body>
+  </div>
   )
 }
 

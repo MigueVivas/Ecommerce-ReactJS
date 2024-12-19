@@ -15,14 +15,25 @@
     .categories{
         display: flex;
         list-style: none;
-        margin: 0 20px;
-        li{
-            padding: 0 15px;
-        }
+        justify-content: space-between;
     }
+
+    .categoriesLink{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
     .cartwidget{
         display: flex;
         margin-right: 50px;
         
+    }
+
+    .backButton{
+        color: white;
+        background-color: black;
+        border-color: black;
+
     }
 }
