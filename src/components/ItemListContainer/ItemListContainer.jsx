@@ -34,15 +34,13 @@ const ItemListContainer = ({ greeting }) => {
 
 
     return (
-        <main>
-            <div className="itemlistcontainer">
-      <h1>{greeting}</h1>
-      {
-        loading === true ? (<div style={{ height: "80vh", display: "flex", justifyContent: "center", alignItems: "center" }}> <SyncLoader color="lime" /> </div>) : (<ItemList products={products} />)
-      }
-    </div>
-        </main>
-    )
+          <div className="itemlistcontainer">
+             <h1>{greeting}</h1>
+              {
+               loading === true ? (<div style={{ height: "80vh", display: "flex", justifyContent: "center", alignItems: "center" }}> <SyncLoader color="lime" /> </div>) : (<ItemList products={products} />)
+               }
+          </div>
+           )
 }
 
 export default ItemListContainer

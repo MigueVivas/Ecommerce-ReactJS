@@ -1,0 +1,38 @@
+.navbar {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #f4f0e0;
+}
+.navbar img {
+  width: 100px;
+  height: 30px;
+}
+.navbar .drinkType {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.navbar .drinkType-active {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.navbar .categoriesLink {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .cartwidget {
+  display: flex;
+  margin-right: 50px;
+}
+.navbar .backButton {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+/*# sourceMappingURL=navBar.css.map */
