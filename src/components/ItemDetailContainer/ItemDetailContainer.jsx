@@ -4,7 +4,7 @@ import { getProducts } from "../../data/data.js"
 import { useParams } from "react-router-dom"
 
 const ItemDetailContainer = () => {
-  const [product, setProduct] = useState({})
+  const [product, setProduct] = useState(null)
 
   const { idProduct } = useParams()
 
@@ -12,15 +12,21 @@ const ItemDetailContainer = () => {
 
     getProducts()
       .then( (data) => {
-        const productFind = data.find( (dataProduct) => dataProduct.id === idProduct )
+        const productFind = data.find( (dataProduct) => dataProduct.id === Number(idProduct))
         setProduct(productFind)
       })
 
-  }, [])
+      .catch((error) => {
+        console.error("Error fetching product:", error)
+      })
 
-  return (
-    <ItemDetail product={product} />
-  )
+  }, [idProduct])
+
+  if (!product) {
+    return <p>Cargando detalles del producto...</p>
+  }
+
+  return <ItemDetail product={product} />
 }
 
 export default ItemDetailContainer

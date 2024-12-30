@@ -1,4 +1,5 @@
 import useState from 'react'
+import Contador from './Contador'
 
 const Contador = () => {
 
@@ -8,11 +9,8 @@ const Contador = () => {
     }
 
   return (
-    <div>
-        <p>Contador: {contador} </p>
-        <button onClick= {sumaContador}>+</button>
-    </div>
+    <Contador contador={contador} sumaContador={sumaContador} />
   )
 }
 
-export default Contador
+export default ContadorContainer
