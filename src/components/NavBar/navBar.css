@@ -11,12 +11,12 @@
   width: 100px;
   height: 30px;
 }
-.navbar .drinkType {
+.navbar .category {
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
-.navbar .drinkType-active {
+.navbar .category-active {
   display: flex;
   list-style: none;
   justify-content: space-between;

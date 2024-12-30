@@ -2,7 +2,6 @@ const products = [
     { 
         id: 1,
         img: "./img/havanaespecial.png",
-        isAlcoholic: true,
         category: "Ron", 
         name: "Havana Club",
         description: "Un ron joven y ligero con un sabor equilibrado y ligeramente dulce. Ideal para cócteles como el clásico Cuba Libre.",
@@ -11,7 +10,6 @@ const products = [
     { 
         id: 2,
         img: "./img/havana7anios.png",
-        isAlcoholic: true,
         category: "Ron",
         name: "Havana 7 años",
         description: "Un ron envejecido que destaca por sus notas de cacao, vainilla y frutas tropicales. Perfecto para tomar solo o con hielo.",
@@ -20,7 +18,6 @@ const products = [
     {
         id: 3,
         img: "./img/havana15anios.png",
-        isAlcoholic: true,
         category: "Ron",
         name: "Havana 15 años",
         description: "Un ron premium de larga maduración con sabores profundos de caramelo, miel y especias. Un deleite para disfrutar solo en momentos especiales.",
@@ -29,7 +26,6 @@ const products = [
     {
         id: 4,
         img: "./img/havanaseleccion.png",
-        isAlcoholic: true,
         category: "Ron",
         name: "Havana Selección de Maestros",
         description: "Un ron de alta gama con una mezcla de rones añejos seleccionados, ofreciendo un perfil sofisticado con notas de frutos secos y madera.",
@@ -38,7 +34,6 @@ const products = [
     {
         id: 5,
         img: "./img/aguavillavicencio.jpg",
-        isAlcoholic: false,
         category: "Varias",
         name: "Agua sin gas 500 ml",
         description: "Agua mineral natural argentina, conocida por su pureza y equilibrio de minerales. Ideal para refrescarse y acompañar cualquier comida.",
@@ -47,7 +42,6 @@ const products = [
     { 
         id: 6,
         img: "./img/cocacola175.png",
-        isAlcoholic: false,
         category: "Gaseosas",
         name: "Coca Cola 1.5 Lts",
         description: "Un refresco icónico con un sabor dulce y burbujeante. Perfecto para disfrutar solo o como mezclador en bebidas.",
@@ -56,7 +50,6 @@ const products = [
     { 
         id: 7,
         img: "./img/cepitanaranja.jpg",
-        isAlcoholic: false,
         category: "Varias",
         name: "Jugo de Naranja 1 Lt",
         description: "Bebida elaborada con jugo de naranja pasteurizado, con un sabor dulce y cítrico. Ideal para acompañar comidas o como base para cócteles, con la conveniencia de su formato listo para consumir.",
