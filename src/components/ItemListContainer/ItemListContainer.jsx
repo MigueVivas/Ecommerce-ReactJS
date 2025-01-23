@@ -45,7 +45,7 @@ const ItemListContainer = ({ greeting }) => {
    
     useEffect(() => {
       if(idCategory){
-        getProductsByCategory() // Se estaba olvidando llamar a la función con ()
+        getProductsByCategory() 
       } else {
         getProducts()
       }

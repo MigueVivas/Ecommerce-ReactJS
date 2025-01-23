@@ -1,38 +1,100 @@
-.itemlistcontainer{
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-  }
-  .itemlistcontainer .itemlist{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .itemlistcontainer .item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 200px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
+.itemlistcontainer {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.itemlistcontainer h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+.itemlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+}
+
+.item {
+  display: block;
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: black;
+  max-width: 200px;
+  margin: 15px;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.img-item {
+  width: auto;
+  height: 10rem;
+  border-radius: 8px;
+  background-color: white;
   
-  .item .img-item{
-    max-width: 100%;
-    height: auto;
-    max-height: 150px;
-    object-fit: center;
-    border-radius: 5px;
-  }
-  
-  .item .text-item{
-    padding: 1% 0;
-  }
+}
+
+
+.text-item {
+  font-size: 16px;
+  color: black;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.text-item:last-child {
+  font-size: 18px;
+  color: #007bff;
+  font-weight: 700;
+}
+
+.item:hover .text-item {
+  color: #007bff;
+}
+
+.loading, .empty-cart {
+  text-align: center;
+  padding: 50px;
+  color: black;
+}
+
+.loading h3, .empty-cart h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.loading, .empty-cart {
+  font-size: 20px;
+}
+
+.empty-cart .button-home-empty-cart, .loading .button-home-empty-cart {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  background-color: #F07C06;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.empty-cart .button-home-empty-cart:hover, .loading .button-home-empty-cart:hover {
+  background-color: #F07C06;
+}

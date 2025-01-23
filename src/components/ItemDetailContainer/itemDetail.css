@@ -1,45 +1,127 @@
-.item-detail{
-    display: flex;
-    width: 100%;
-    min-height: 90vh;
-    padding: 100px 0;
-  }
-  .images-detail-container{
-    display: flex;
-    width: 50%;
-  }
-  .images-detail-container .secondary-images{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-  }
-  .images-detail-container .secondary-images img{
-    width: 40%;
-    margin: 10px 0;
-    border-radius: 5px;
-  }
-  .images-detail-container .main-image{
-    width: 60%;
-  }
-  .images-detail-container .main-image img{
-    max-width: 10em;
-    border-radius: 5px;
-    }
-  
-  .text-detail-container{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-  }
-  .title-detail{
-    padding: 10px 0;
-    font-size: 3rem;
-  }
-  .text-detail{
-    font-style: italic;
-    padding: 10px 0;
-    font-size: 1.5rem;
-    color: black;
-  }
+.item-detail {
+  display: flex;
+  margin: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.images-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  flex: 1;
+}
+
+.secondary-images {
+  margin-bottom: 10px;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.text-detail-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title-detail {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.text-detail {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.text-detail a {
+  font-size: 16px;
+  color: #F07C06;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.text-detail a:hover {
+  color: #F07C06;
+}
+
+.itemcount-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.itemcount-container button {
+  background-color: #F07C06;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.itemcount-container button:hover {
+  background-color: #a15509;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: #f00;
+  margin-top: 20px;
+  padding: 5px;
+  ;
+}
+
+.error-message h2 {
+padding: 3rem;
+}
+
+.error-message a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.button-error-message {
+  background-color: #F07C06;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button-error-message a:hover {
+  background-color: #a15509;
+}
+
+.loading-message {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  margin-top: 20px;
+}
+
+.item-detail-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 20px;
+}
+

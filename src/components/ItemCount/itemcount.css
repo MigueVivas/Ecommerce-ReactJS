@@ -1,39 +1,59 @@
-.item-count{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-  }
-  .item-count .controls-count{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-  }
-  .controls-count button{
-    width: 40px;
-    height: 40px;
-    background-color: rgb(42, 42, 42);
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-  }
-  .controls-count button:hover{
-    border: 1px solid #2ECC71;
-    cursor: pointer;
-  }
-  .controls-count p{
-    font-weight: bold;
-  }
-  
-  .button-add-count{
-    padding: 10px 0;
-    background-color: rgb(42, 42, 42);
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-  }
-  .button-add-count:hover{
-    border: 1px solid #2ECC71;
-    color: #2ECC71;
-    cursor: pointer;
-  }
+.item-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.controls-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls-count button {
+  background-color: #F07C06;
+  color: black;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.controls-count button:hover {
+  background-color: #a55a10;
+  color: white;
+}
+
+.controls-count p {
+  margin: 0 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+
+.button-add-count {
+  background-color: #F07C06;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 200px;
+}
+
+.button-add-count:hover {
+  background-color: #a55a10;
+}
+
+.controls-count button:disabled {
+  background-color: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+}

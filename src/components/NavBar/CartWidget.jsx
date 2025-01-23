@@ -7,10 +7,12 @@ const CartWidget = () => {
 
     const { totalQuantity } = useContext(CartContext)
 
+    let quantity = totalQuantity()
+
      return (
         <Link to="/cart" className="cartwidget">
             <RiShoppingCart2Line size={25} color="#f4f0e0" />
-            <p>{totalQuantity()}</p>
+            <p>{ quantity !== 0 && quantity }</p>
         </Link>
     )
 }
