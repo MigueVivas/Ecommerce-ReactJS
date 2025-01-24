@@ -76,8 +76,13 @@
   }
   
   .info-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     text-align: center;
+    align-items: center;
     margin-top: 20px;
+    
   }
   
   .info-cart h3 {
@@ -93,8 +98,27 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
+    width: 200px;
   }
   
   .button-delete-cart:hover {
+    background-color: #af5a05;
+  }
+
+  .button-end-bill {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: Black;
+    background-color: #F07C06;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  .button-end-bill:hover{
     background-color: #af5a05;
   }

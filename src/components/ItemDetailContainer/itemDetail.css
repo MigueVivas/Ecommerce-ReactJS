@@ -125,3 +125,21 @@ padding: 3rem;
   padding: 20px;
 }
 
+.button-ending-buys {
+  background-color: #F07C06;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button-ending-buys a {
+  text-decoration: none;
+}
+
+.button-ending-buys:hover{
+  background-color: #a15509;
+}
