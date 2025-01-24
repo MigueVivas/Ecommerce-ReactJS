@@ -1,0 +1,70 @@
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+  }
+  
+
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #F07C06;
+    box-shadow: 0 0 5px rgba(240, 124, 6, 0.5);
+  }
+  
+  form button {
+    background-color: #F07C06;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #d96b05;
+  }
+  
+  .checkout-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .checkout-container p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .checkout-container h3 {
+    font-size: 20px;
+    color: #F07C06;
+    margin-top: 10px;
+  }
+  

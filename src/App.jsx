@@ -5,6 +5,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Footer from './components/Footer/Footer'
 import { CartProvider } from './Context/CartContext'
 import Cart from './components/Cart/Cart'
+import Checkout from './components/Checkout/Checkout'
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/category/:idCategory" element={ <ItemListContainer greeting={"BIENVENIDO A TIENDA ELIXIR"} /> } />
           <Route path="/detail/:idProduct" element={ <ItemDetailContainer/> } />
           <Route path="/cart" element={<Cart/>}/>
+          <Route path="/checkout" element={<Checkout/>}/>
 
           <Route path="*" element={ <div>Error 404 - Pagina no encontrada</div> } />
         </Routes>
